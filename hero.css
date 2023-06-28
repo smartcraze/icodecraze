@@ -1,0 +1,105 @@
+/* styling animation text and names and intro */
+main {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: rgb(182, 130, 130); */
+}
+
+.hero {
+    font-size: 3rem;
+
+}
+
+#element {
+    color: rgb(104, 35, 184);
+}
+
+.purple {
+    color: rgb(104, 35, 184);
+}
+
+.right img {
+    height: 20rem;
+    width: auto;
+    margin: 23px 23px;
+    /* border: 2px solid black; */
+    /* border-radius: 50px; */
+}
+
+.btn_class a {
+    text-decoration: none;
+}
+
+.btn {
+    border: 2px solid black;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(158, 128, 214);
+    color: white;
+    font-size: 1.09rem;
+}
+
+.btn:hover {
+    background-color: rgb(148, 117, 206);
+}
+
+
+/* Styling Work experience  */
+
+
+.work_experience h1 {
+    margin: 15px;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.work_card {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin: 40px;
+}
+
+.work_item {
+    height: 250px;
+    width: 350px;
+    border: 2px solid purple;
+    box-shadow: 0 2px 4px rgba(77, 76, 76, 0.2),
+        0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 13px;
+    background-color: rgb(255, 253, 250);
+}
+
+.work_item h1 {
+    padding: 10px 8px;
+}
+
+.work_item img {
+    height: 50px;
+    width: 50px;
+
+}
+
+.imgcontainer {
+    width: 50px;
+    margin: 4px auto;
+}
+
+.work_item:hover {
+    background-color: #ca9ee8;
+    transform: scale(1.2);
+    transition: 1s ease-in-out;
+    cursor: zoom-in;
+
+    /* completed */
+}
+
+/* now starting about section */

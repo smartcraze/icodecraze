@@ -1,0 +1,8 @@
+/* here responsiveness for the page goes ................... */
+@media screen and (max-width: 815px) {
+    .hero{
+       
+        padding: 50px;
+
+    }
+}

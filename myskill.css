@@ -1,0 +1,168 @@
+/* heading goes here */
+.myskills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    justify-items: center;
+    margin-bottom: 5rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.myskill {
+    margin: 10px;
+    padding: 10px;
+}
+
+.myskill h1 {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* card goes here */
+.card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border: 2px solid rgb(162, 5, 224);
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(77, 76, 76, 0.2),
+        0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front img {
+    height: 100px;
+    width: 100px;
+}
+
+.card-back {
+    background-color: #ebe172;
+    transform: rotateY(180deg);
+    display: flex;
+    /* color: #ffffff; */
+    font-size: 1.15rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myskills,
+.myskill p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #3a3838;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgb(165, 72, 182);
+    text-transform: uppercase;
+
+}
+
+
+/* .bgtoskill::before {
+
+    background: url('../image/artificial\ intelligence.png') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    /* bottom: 0; */
+    /* width: 100%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.7; */
+.white{
+    color: white;
+}
+
+/* footer goes here */
+/* Footer Styles */
+footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-links ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #555555;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #888888;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    color: #888888;
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    color: #888888;
+  }
+  
+  .footer-bottom a:hover {
+    color: #555555;
+  }
+  .footer-logo img{
+    filter: invert(50);
+  }

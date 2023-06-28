@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    background-color: #f3f2f2;
+}
+
+/* Navigation Bar Styling */
+
+header {
+    background-color: #f2f2f2;
+    padding: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   /* height: 50px; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    padding: 0px 25px;
+    filter: invert(100%);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    padding: 0px 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.20rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ff7f50;
+    font-size: 1.25rem;
+}
+
+/* 
+@media screen and (max-width: 430px) {
+    body{
+        background-color: rgb(141, 92, 27);
+    }
+  
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 300px) {
+    body{
+        background-color: rgb(165, 56, 150);
+    }
+  .menu{
+    display: flex;
+    flex-direction: column;
+  }
+} */
